@@ -36,7 +36,7 @@
         <nav class="header-nav">
           <ul class="header-nav_list">
             <li class="header-nav_item">
-              <a class="header-nav_link" href="">Студія</a>
+              <a class="header-nav_link header-nav_link-active" href="">Студія</a>
             </li>
             <li class="header-nav_item">
               <a class="header-nav_link" href="./portfolio.html">Портфоліо</a>
@@ -73,7 +73,7 @@
       <section class="hero">
         <div class="conteiner-hero conteiner">
           <h1 class="hero_title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero_btn btn">Замовити послугу</button>
+          <button type="button" class="hero_btn btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -135,9 +135,21 @@
         <div class="conteiner">
           <h2 class="about_title">Чим ми займаємося</h2>
           <div class="wrap_about_img">
-            <img class="about_img" src="./images/main/tehnology/1.jpg" alt="comp" />
-            <img class="about_img" src="./images/main/tehnology/2.jpg" alt="comp" />
-            <img class="about_img" src="./images/main/tehnology/3.jpg" alt="comp" />
+            <div class="about_box-img">
+              <img class="about_img" src="./images/main/tehnology/1.jpg" alt="comp" />
+            <div class="about_img_box-text">
+              <p class="about_img_text">Десктопні додатки</p></div>
+            </div>
+            <div class="about_box-img">
+              <img class="about_img" src="./images/main/tehnology/2.jpg" alt="comp" />
+            <div class="about_img_box-text">
+              <p class="about_img_text">Мобільні додатки</p></div>
+            </div>
+            <div class="about_box-img">
+              <img class="about_img" src="./images/main/tehnology/3.jpg" alt="comp" />
+            <div class="about_img_box-text">
+              <p class="about_img_text">Дизайнерські рішення</p></div>
+            </div>
           </div>
       </section>
         <section class="sections command">
@@ -422,5 +434,19 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" data-modal-close>
+          <svg class="icon-close-btn" width="11" height="11">
+            <use href="./images/icons.svg#icon-close-btn-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
+
   </body>
 </html>
